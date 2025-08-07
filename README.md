@@ -77,6 +77,7 @@ attack_df = synthesize_attack(
 
 We gratefully acknowledge the partial reuse of code and ideas from the following work:
 
+```bibtex
 @inproceedings{ho2021hopper,
   title={Hopper: Modeling and detecting lateral movement},
   author={Ho, Grant and Dhiman, Mayank and Akhawe, Devdatta and Paxson, Vern and Savage, Stefan and Voelker, Geoffrey M and Wagner, David},
@@ -84,8 +85,6 @@ We gratefully acknowledge the partial reuse of code and ideas from the following
   pages={3093--3110},
   year={2021}
 }
-
-
 
 
 
