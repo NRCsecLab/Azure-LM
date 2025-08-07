@@ -1,1 +1,85 @@
 # Azure-LM
+This repository contains the source code and data used in the paper:
+
+**"Synthetic Lateral Movement Data Generation for Azure Cloud: A Hopper-Based Approach"**,  
+to appear in the *Proceedings of the 24th International Conference on Cryptology and Network Security (CANS 2025)*.
+
+If you use this code or data, please cite our paper.
+
+
+
+## Prerequisites
+
+- Python 3.7+
+- pandas
+- igraph
+- dateutil
+
+You can install the required packages using:
+* ``` bash
+    pip install -r requirements.txt
+  ```
+
+## Data Preparation
+
+Before running the script, ensure your data files are in the `data/input/` directory with the following names:
+
+
+
+
+## Using the Processed Data for Attack Synthesis
+
+You can use the data to synthesize attack scenarios. Here's an example of how to set up and run an attack synthesis:
+
+```python
+import pytz
+import pandas as pd
+from datetime import datetime
+from attack_start import AttackStart
+from attack_path_config import AttackPathConfig
+from scenario_constants import ScenarioConstants
+from movement_stealth import MovementStealth
+from attack_synthesizer import synthesize_attack
+
+# Load the preprocessed data
+df_signin = pd.read_csv('data/output/data_**.csv')
+G = ig.Graph.Read_Pickle('data/output/login_graph.v2.pkl')
+
+# Initialize the attack start
+start = AttackStart(start_strategy=AttackStart.START_RANDOM)
+start.initialize(G)
+
+# Define an attack configuration
+attack_config = AttackPathConfig(
+    attack_goal=ScenarioConstants.GOAL_EXPLORATION,
+    stealth=MovementStealth.STEALTH_NONE,
+    protocol='password',
+    start_state=start,
+    attacker_knowledge='local'
+)
+
+# Set the start datetime for the attack
+start_dt = datetime(2022, 1, 1, tzinfo=pytz.UTC)
+
+# Run the synthesis
+attack_df = synthesize_attack(
+    logins=df_signin,
+    attack_config=attack_config,
+    graph=G,
+    start_dt=start_dt
+)
+
+# The resulting attack_df contains the synthesized attack scenario
+
+```
+     
+## Acknowledgement
+
+We gratefully acknowledge the partial reuse of code and ideas from the following work:
+
+Ho, S. C., Kim, T., Kim, D., & Kim, Y. (2021). Detecting Credential Stuffing Attacks at Scale. In Proceedings of the 30th USENIX Security Symposium (USENIX Security '21).
+
+
+
+
+
