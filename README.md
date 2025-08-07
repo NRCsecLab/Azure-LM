@@ -77,7 +77,13 @@ attack_df = synthesize_attack(
 
 We gratefully acknowledge the partial reuse of code and ideas from the following work:
 
-Ho, S. C., Kim, T., Kim, D., & Kim, Y. (2021). Detecting Credential Stuffing Attacks at Scale. In Proceedings of the 30th USENIX Security Symposium (USENIX Security '21).
+@inproceedings{ho2021hopper,
+  title={Hopper: Modeling and detecting lateral movement},
+  author={Ho, Grant and Dhiman, Mayank and Akhawe, Devdatta and Paxson, Vern and Savage, Stefan and Voelker, Geoffrey M and Wagner, David},
+  booktitle={30th USENIX Security Symposium (USENIX Security 21)},
+  pages={3093--3110},
+  year={2021}
+}
 
 
 
