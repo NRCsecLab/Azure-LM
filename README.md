@@ -7,7 +7,7 @@ to appear in the *Proceedings of the 24th International Conference on Cryptology
 If you use this code or data, please cite our paper.
 
 ## Dataset 
-Available  https://doi.org/10.4224/40003549 
+https://doi.org/10.4224/40003549 
 
 ## Prerequisites
 
