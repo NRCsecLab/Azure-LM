@@ -1,8 +1,8 @@
 # Azure-LM
 This repository contains the source code and data used in the paper:
 
-**"Synthetic Lateral Movement Data Generation for Azure Cloud: A Hopper-Based Approach"**,  
-to appear in the *Proceedings of the 24th International Conference on Cryptology and Network Security (CANS 2025)*.
+Mohammad Mamun, Hadeer Ahmed, Anas Mabrouk, and Sherif Saad, **Synthetic Lateral Movement Data Generation for Azure Cloud: A Hopper-Based Approach**,  
+*Proceedings of the 24th International Conference on Cryptology and Network Security (CANS 2025)*.
 
 If you use this code or data, please cite our paper.
 
