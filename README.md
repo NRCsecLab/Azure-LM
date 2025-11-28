@@ -1,5 +1,6 @@
 # Azure-LM
-This repository contains the source code and data used in the paper:
+
+If you use this code or data, please cite our paper:
 
 ```bibtex
 @inproceedings{mamun2025synthetic,
@@ -11,7 +12,6 @@ This repository contains the source code and data used in the paper:
   organization={Springer}
 }
 
-If you use this code or data, please cite our paper.
 
 ## Dataset 
 https://doi.org/10.4224/40003549 
