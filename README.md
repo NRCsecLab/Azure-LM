@@ -13,21 +13,6 @@ If you use this code or data, please cite our paper:
 }
 
 
-## Dataset
-https://doi.org/10.4224/40003549 
-
-## Prerequisites
-
-- Python 3.7+
-- pandas
-- igraph
-- dateutil
-
-You can install the required packages using:
- ``` bash
-    pip install -r requirements.txt
-  ```
-
 ## Data Preparation
 
 Before running the script, ensure your data files are in the `data/input/` directory with the following names:
