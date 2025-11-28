@@ -1,6 +1,7 @@
 # Azure-LM
 This repository contains the source code and data used in the paper:
 
+```bibtex
 @inproceedings{mamun2025synthetic,
   title={Synthetic Lateral Movement Data Generation for Azure Cloud: A Hopper-Based Approach},
   author={Mamun, Mohammad and Ahmed, Hadeer and Mabrouk, Anas and Saad, Sherif},
