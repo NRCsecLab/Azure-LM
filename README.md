@@ -13,7 +13,7 @@ If you use this code or data, please cite our paper:
 }
 
 
-## Dataset 
+## Dataset
 https://doi.org/10.4224/40003549 
 
 ## Prerequisites
@@ -24,7 +24,7 @@ https://doi.org/10.4224/40003549
 - dateutil
 
 You can install the required packages using:
-* ``` bash
+ ``` bash
     pip install -r requirements.txt
   ```
 
